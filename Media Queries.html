@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries in the CSS</title>
+    <style>
+        .box{
+            text-align: center;
+            display: none;
+            background-color: forestgreen;
+            font-size: 75px;
+            color: brown;
+        }
+        @media screen and (min-width:400px){
+            #box1{
+                display: block;
+            }
+        }
+        @media (min-width:400px) and (max-width:900px){
+            #box2{
+                display: none;
+                background-color: dimgray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2> Syntax of Media Queries</h2>
+    <p> @media media-type and (media-feature)
+        {
+            CSS Rules to be applied
+        }
+    </p>
+    <ul>
+        <li> media-type cam be any device, we want to make responsive, as example screen.</li>
+        <li> media-feature can contain max-width and min-width parameter</li>
+        <li> We have used AND operator to combine two queries to be true. We can also use other operations such as not, only, and comma.</li>
+    </ul>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Model </title>
+    <style>
+        .container{
+            background-color: tomato;
+            border: 10px solid navajowhite;
+            padding: 19px 10px;
+            margin: 22px 19px;
+        }
+       /* *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p> The element is in the center surrounded by padding, border and margin. And we can set this in several way like -</p>
+        <ol type="1">
+            <li> We can set margin/padding for top, bottom, right and left.</li>
+            <li> It can also written like this, padding/margin: top right bottom left.</li>
+            <li> It can written in x and y form also, margin/padding: x(top/bottom), y(left/right.)</li>
+        </ol>
+    </div>
+        <p> On giving width to the element and after that applying padding in the container, the width also changes. It is because in the actual width of an element, margin is already been added into it. If you want this not to happen, then you can use the property of 'box-sizing'</p>
+        <p> We can take the help of universal selector in the CSS to apply the property of box-sizing in all the elements available. It is denoted with a "*".</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation and Keyframes in CSS </title>
+    <style>
+        .container{
+            background-color: crimson;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            background-color: coral;
+            /*animation-name: firstone;*/
+            animation-name: secondone;
+            animation-duration: 8s;
+            animation-iteration-count: 6;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: alternate;
+            animation-delay: 3s;
+            animation-direction: reverse;
+        }
+        /*
+        @keyframes firstone{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 300px;
+                left: 0px;
+            }
+            75%{
+                top: 300px;
+                left: 300px;
+            }
+            100%{
+                top: 0px;
+                left: 300px;
+            }
+        }*/
+        @keyframes secondone{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2> Animation in the CSS</h2>
+    <ol type="1">
+        <li> animation-name </li>
+        <li> animation duration </li>
+        <li> animation-iteratiob-count</li>
+        <li> animation-fill-mode </li>
+        <li> animation-timing -function</li>
+        <li> animation-delay</li>
+        <li> animation-direction</li>
+    </ol>
+    <hr/>
+    <h3> Keyframes in the CSS </h3>
+    <p>They are used to make the animation. From and to are used to decide how the animation will move in the webpage.</p>
+    <p> Syntax
+        @keyframe animation-name{
+            from{
+
+            }
+            to{
+
+            }
+        }
+    </p>
+    <div class="container">
+        <div class="box">
+            Let's Animate this Box.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background</title>
+    <style>
+        #fp{
+            background-color: brown;
+            border: 9px solid black;
+            /* border: width, style, color*/
+            border-radius: 5px;
+            height: 45px;
+        }
+        #sp{
+            background-color: blueviolet;
+            height: 30px;
+            border-top: 10px solid gray;
+            border-bottom: 10px solid gray;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+        #tp{
+            height: 400px;
+            width: 275px;
+            border: 14px solid red;
+            background-image: url('4269738.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .info{
+            font-weight: bold;
+            line-height: 2.3em;
+        }
+    </style>
+</head>
+<body>
+    <h3> First Paragraph </h3> 
+    <p id="fp"> Let's start with litle change, we can use: </p> 
+    <ul class="info">
+        <li> background-color</li>
+        <li> border: width, style, color</li>
+        <li> border-radius</li>
+        <li> height </li>
+    </ol>
+    <hr/>
+    <h3> Second Paragraph </h3> 
+    <p id="sp"> Now if the condition arises that you want to give a border only at one end, then what will you do, we can use:</p>
+    <ul class="info">
+        <li> border-top as wells as for botton,left, and right</li>
+        <li> border-top-right-radius as well as for top-left, bottom-right, and bottom-left</li>
+    </ul> 
+    <hr/>
+    <h3> Third Paragraph </h3>
+    <p id="tp"> Now what if you want to add a background image behind the text that you have written, we can use:</p> 
+    <ul class="info">
+        <li> background-image </li>
+        <li> background-position</li>
+        <li>background-repeat</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in the CSS</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 4px solid firebrick;
+            margin: auto;
+            width: 1200px;
+        }
+        img{
+            display: block;
+            width: 40px;
+            margin: auto;
+        }
+        h3{
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .box{
+            background-color: seagreen;
+            border: 6px solid hotpink;
+            padding: 24px;
+            margin: 6px 0px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="4269738.png">
+        <h3> Display in the CSS</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h1> About Display</h1>
+            <p> The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children such as flow layout, grid or flexbox.</p>
+        </div>
+        <div class="box">
+            <h1> Types of Display </h1>
+            <p>Display Inline means it will take the space according to the size of the element.</p>
+            <p>Display Block means we can set it width and by margin manually.</p>
+        </div>
+        <div class="box">
+            <h1> Box-Sizing in Display</h1>
+            <p> To ensure that alll the three blocks come in  a single line, we can use the property box-sizing.</p>
+        </div>
+    </div>
+</body>
+</html>

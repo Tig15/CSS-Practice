@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Using Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer';
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: aqua;
+            }
+            .container{
+                grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body{
+                background-color: crimson;
+            }
+            .container{
+                grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body{
+                background-color: lime;
+            }
+            .container{
+                grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body{
+                background-color: fuchsia;
+            }
+            .container{
+                grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .bdr{
+            border: 4px solid grey;
+            background-color: firebrick;
+            padding: 21px 10px;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span> Home</span>
+            <span> About Us</span>
+            <span> Support</span>
+            <span> Contact Us</span>
+        </nav>
+        <section class="bdr">
+            <h2> CSS Section</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum doloribus ab deleniti odio aliquam dolores animi recusandae! Voluptatum quo amet, voluptatem consequatur, ea sunt rerum perferendis at deleniti cupiditate ad?</p>
+        </section>
+        <aside class="bdr">
+            <h3> More about us</h3>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright WIS
+    </footer>
+</body>
+</html>

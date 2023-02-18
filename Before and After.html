@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and After Psuedo Selectors </title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            color: wheat;
+            background-color: forestgreen;
+        }
+        header::before{
+            background-image: url('4269738.png');
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            opacity: 0.7;
+        }
+        .navigation{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 33px;
+        }
+        section{
+            height: 325px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 5px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"> Home</li>
+                <li class="item"> About</li>
+                <li class="item"> Service</li>
+                <li class="item"> Contact Us</li>
+            </ul>
+        </nav>
+     </header>
+     <section>
+        <h2> Welcome to My Writing World</h2>
+        <p> The Sun is Gold, The Moon is Silver,  The Sky has a symphony of colors yet her eyes are the only place where I can experience it all, and still, never get enough…</p>
+     </section>
+</body>
+</html>

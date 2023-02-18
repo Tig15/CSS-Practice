@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Position in CSS</title>
+    <style>
+        .container{
+            border: 30px solid firebrick;
+            background-color: coral;
+            height: 2022px;
+        }
+        h2{
+            text-align: center;
+
+        }
+        h4{
+            text-align: center;
+        }
+        p,h4{
+            font-weight: bold;
+        }
+        .box {
+            display: inline-block;
+            width: 175px;
+            height: 175px;
+            margin: 17x;
+            border: 3px solid magenta;
+        }
+        #box2{
+            position: relative;
+            top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Types of Position in CSS</h2>
+        <div class="box" id="box1">
+            <h4> Static</h4>
+            <p> Static is default position of HTML.</p>
+        </div>
+        <div class="box" id="box2">
+            <h4> Relative</h4>
+            <p> It is used when we need to positions an HTML element relative to its normal position</p>
+        </div>
+        <div class="box" id="box3">
+            <h4> Absolute</h4>
+            <p> An element with the absolute position will move according to the position of its parent elements.</p>
+        </div>
+        <div class="box" id="box4">
+            <h4> Fixed</h4>
+            <p> It will remain stuck to a specific position even after the page is scrolled.</p>
+        </div>
+        <div class="box" id="box5">
+            <h4> Sticky</h4>
+            <p>It is used to position the element based on the scroll position of the user.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> More on CSS Selectors</title>
+    <style>
+        h1{
+            background-color: cyan ;
+            color: violet;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p{
+            background-color: crimson ;
+            color: goldenrod;
+            font-weight: bolder;
+        }
+        div>p{
+            background-color: maroon;
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h2> Let's learn more about CSS Selectors.</h2>
+    <div class="container">
+        <div class="fdiv">
+            <ul>
+                <li class="item">
+                    <p> This paragraph is child of "li" not of "div".</p>
+                </li>
+            </ul>
+            <p> This is second paragragh, and direct child of div.</p>
+        </div>
+        <P> This is direct paragraph, and same child of div.</P>
+    </div>
+    <p> Well, this is outermost paragraph</p>
+</body>
+</html>

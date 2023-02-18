@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box and Text Shadow </title>
+    <style>
+        .anime{
+            display: flex;
+        }
+        .top{
+            padding: 21px 30px;
+            margin: 21px 30px;
+            background-color:lawngreen;
+            box-shadow: 10px 7px 5px 43px goldenrod;
+        }
+        .top h3{
+            text-shadow: -5px -4px 6px crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1> Box and Text Shadow Properties:</h1>
+    <p>
+        The box shadow css property adds shadow effect around an element's frame. Syntax,
+        box-shadow: offset-x, offset-y, blur-radius, spread-radius, color
+    </p>
+    <hr/>
+    <p>
+        The text shadow css property adds a shadow to text. Syntax,
+        text-shadow: offset-x, offset-y, blur-radius, color
+    </p>
+    <div class="anime">
+        <div class="top" id="top-1">
+            <h3> Bleach </h3>
+            <p> One of my personal favourite.</p>
+        </div>
+        <div class="top" id="top-2">
+            <h3> Fairy Tail</h3>
+            <p> Anime which rise the hunger inside me to watch other anime.</p>
+        </div>
+        <div class="top" id="top-3">
+            <h3> Haikyuu! </h3>
+            <p> One of the best sports anime, which made me fall in love with volleyball.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transform Property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 80vh;
+            display: flex;
+            background-color: crimson;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 6px solid goldenrod;
+            border-radius: 4px;
+            transition: all 3s ease-in-out;
+        }
+        .box:hover{
+            /*transform: rotate(45deg);
+            transform: skew(40deg);
+            transform: scale(2);*/
+            transform: translate(135px,135px);
+        }
+    </style>
+</head>
+<body>
+    <h2> Tranform Property directly use in the box, keywords are:</h2>
+    <ol type="1">
+        <li> transform = rotate(360deg)</li>
+        <li> transform = skew(45deg)</li>
+        <li> transform = scale(2)</li>
+        <li> transform = translate(135px, 135px)</li>
+    </ol>
+    <div class="container">
+        <div class="box">
+            <p> Let's use Transform Properties.</p>
+        </div>
+    </div>
+</body>
+</html>
